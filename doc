@@ -1,0 +1,42 @@
+
+/**
+	LEYENDA 
+	-> = carpetas
+	* = archivos
+	{*} = muchos archivos/carpetas
+*/
+
+-> rubricas: carpeta principal del proyecto.
+	* index.php: contiene la página principal del proyecto dónde el usuario se puede conectar.
+	* registration.php: dónde los usuarios se pueden registrar.
+	
+	-> community: espacio para el usuario conectado.
+		-> boostrap: css usado para el proyecto.
+		-> charts: librería para crear gráficos.
+		* crear.php: crea las rubricas.
+		* index.php: página principal que se muestra cuándo el usuario está conectado, muestra una lísta de rúbricas y la opcion de eliminarlas.
+		* logout.php: desconecta al usuario.
+		* resultados.php: muestra los resultados obtenidos de una rubrica (medianas, junto a una mediana global).
+
+	-> config: configuraciones y funciones de la base de datos.
+		* captcha.jpg: imágen usada para generar captchas.
+		* captcha.php: configuración del generador de captchas.
+		* checkConnected.php: revisa si el usuario tiene una sessión activa, si no es así redirecciona a la página principal de los usuarios desconectados.
+		* db.php: conexión a la base de datos y lista de funciones.
+		* definitions.php: definiciones repetitivas tales como nombre del proyecto y logo.
+	
+	-> gParts: partes de la página web.
+		* footer.php: contenido del footer de la página, contiene traductor e información extra.
+		* header.php: contenido del header de la página, contiene menú y panel de usuario.	
+
+	-> images: recursos de imágen para la página web.
+		{*} logo de la página, imágenes en general.
+	
+	-> phpqrcode: librería QR.
+		{*} archivos de la librería.
+	
+	-> share: comparte la rubrica.
+		* rubrica.php: genera automáticamente la rubrica para que pueda ser respondida.
+		* style.css: archivo css customizado para la página 'rubrica.php'.
+		* text.png: imágen que genera el QR usado por la librería QR.
+	

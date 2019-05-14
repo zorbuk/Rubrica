@@ -1,0 +1,17 @@
+h1,h2,h3,h4,h5,h6{
+    color:purple;
+}
+small{
+    color:lightgray;
+}
+table{
+    height:auto;
+}
+th{
+    max-height:30%;
+}
+.container{
+    color:black;
+    margin-top:100px;
+}
+nav.navbar{background-color:rgba(70,130,180, 1); border-bottom:1px solid black;}
